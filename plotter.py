@@ -23,6 +23,7 @@ if (len(sys.argv) == 2):
     file_name = sys.argv[1]
 
 if (len(sys.argv)>2):
+    file_name = sys.argv[1]
     if('axis=' in sys.argv[2]):
         # Plot against given variable
         x_key = sys.argv[2][5:]
@@ -43,7 +44,7 @@ else:
     print("Plotting all items ")
     
     
-with open('test.csv') as csvfile:
+with open(file_name) as csvfile:
     
     #####################################
     # Reading file
